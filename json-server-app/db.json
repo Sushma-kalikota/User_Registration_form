@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": "23ad",
+      "fullname": "sushma_kalikota_",
+      "useremail": "sushmakalikota28@gmail.com",
+      "dob": "2004-09-28",
+      "userCity": "Jammikunta"
+    },
+    {
+      "id": "c5f3",
+      "fullname": "srujan_karthikeya_",
+      "useremail": "srujankarthikeya@gmail.com",
+      "dob": "2008-03-18",
+      "userCity": "Jammikunta"
+    },
+    {
+      "id": "097e",
+      "fullname": "jayaprakash",
+      "useremail": "kjp28@gmail.com",
+      "dob": "1971-07-31",
+      "userCity": "Jammikunta"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <!--JQUERY UI CSS-->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!--BOOTSTRAP 5 CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- jQuery (CDN for better performance) -->
+    <script src="../../Jquery_session/plugins/jquery-3.7.1.min.js"></script> 
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+      body {
+          background: url('../wallpaper.png') no-repeat center center fixed;
+          background-size: cover;
+          height: 100vh;
+      }
+    .form-container {
+    background: rgba(255, 255, 255, 0.15); 
+    backdrop-filter: blur(10px); /* Glass effect */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .form-container .form-label {
+    font-size: 18px;
+    font-weight:600;
+    }
+  </style>
+</head>
+<body>
+<main class="container-fluid">
+    <section class="row justify-content-center">
+      <section class="col-12">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">User App</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./userlist.html">User-List</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <section class="col-5 mt-5">
+      <form id="formid" class="form-container">
+        <div class="mb-3">
+          <label for="username" class="form-label">User Name</label>
+          <input type="text" class="form-control" id="username" name="fullname"/>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" class="form-control" id="email" name="useremail"/>
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="dob" class="form-label">Date of Birth</label>
+          <input type="date" class="form-control" id="dob" name="dob" autocomplete="off"/>
+        </div>
+        <div class="mt-3 mb-3">
+          <label for="city" class="form-label">City</label>
+          <select name="userCity" id="city" class="form-select">
+            <option value="select-city">select-city</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Jammikunta">Jammikunta</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Banglore">Banglore</option>
+            <option value="Dhaka">Dhaka</option>
+            <option value="Goa">Goa</option>      
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary" id="save-data">Submit</button>
+      </form>
+      </section>
+      </section>
+    </section>
+</main>
+<script src="./Form2Server.js"></script>
+</body>
+</html>
